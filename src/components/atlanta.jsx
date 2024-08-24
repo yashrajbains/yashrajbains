@@ -2,14 +2,17 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton.jsx';
 
-function Paris() {
+function Atlanta() {
     const navigate = useNavigate();
 
     const images = [
         {
-            src: '/images/eiffelTower.jpg',
-            caption: "Uhhh yea... Unfortunately I did take a picture of the Eiffel Tower. But as " +
-                "always, I'm always...",
+            src: '/images/atlantaImage1.jpg',
+            caption: 'This is an image taken in Atlanta. Describe the context or story behind this photo here.',
+        },
+        {
+            src: '/images/atlantaImage2.jpg',
+            caption: 'Another image from Atlanta with a brief caption explaining the significance or memory.',
         },
         // Add more images and captions as needed
     ];
@@ -19,13 +22,13 @@ function Paris() {
     };
 
     return (
-        <div className="paris-gallery">
+        <div className="atlanta-gallery">
             <BackButton />
-            <h1>Spring 2022: A (relatively) spontaneous trip to Paris with my friend...</h1>
+            <h1>Yes I really did fly to Atlanta to witness Donda LP2...</h1>
             <div className="image-grid">
                 {images.map((image, index) => (
                     <div className="image-item" key={index} onClick={() => viewImage(image)}>
-                        <img src={image.src} alt={`Paris Photo ${index + 1}`} />
+                        <img src={image.src} alt={`Atlanta Photo ${index + 1}`} />
                     </div>
                 ))}
             </div>
@@ -33,4 +36,4 @@ function Paris() {
     );
 }
 
-export default Paris;
+export default Atlanta;

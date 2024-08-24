@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useNavigate } from 'react-router-dom';
+import BackButton from "./BackButton.jsx";
 
 // Custom icon using the Stockton cover image
 const stocktonIcon = new L.Icon({
@@ -20,11 +21,20 @@ const parisIcon = new L.Icon({
     popupAnchor: [0, 0], // Point from which the popup should open relative to the iconAnchor
 });
 
+const atlantaIcon = new L.Icon({
+    iconUrl: '/images/atlantaCover.jpg', // Path to your image
+    iconSize: [40, 60],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, 0],
+});
+
+
 function PageOne() {
     const navigate = useNavigate();
 
     return (
         <div className="App">
+            <BackButton />
             <h1>YashVisualArt</h1>
             <MapContainer
                 center={[37.9577, -121.2908]}  // Center on Stockton, California
@@ -59,6 +69,8 @@ function PageOne() {
                     }}
                 >
                 </Marker>
+
+
             </MapContainer>
         </div>
     );
