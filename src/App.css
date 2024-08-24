@@ -19,3 +19,43 @@ body, html {
   align-items: flex-start;
   text-align: center;
 }
+
+.stockton-gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-item img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #f44336; /* Red background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline-block element */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 5px; /* Rounded corners */
+}
+
