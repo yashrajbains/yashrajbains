@@ -4,6 +4,7 @@ import WelcomePage from './WelcomePage';
 import HomePage from './components/homePage';
 import PageOne from './components/pageOne';
 import PageTwo from './components/pageTwo';
+import Stockton from './components/stockton';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/page-one" element={<PageOne />} />
                 <Route path="/page-two" element={<PageTwo />} />
+                <Route path="/stockton-photos" element={<Stockton />} />
             </Routes>
         </Router>
     );
