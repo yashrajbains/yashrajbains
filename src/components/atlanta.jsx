@@ -8,7 +8,7 @@ function Atlanta() {
     const images = [
         {
             src: '/images/atlantaImage1.jpg',
-            caption: 'This is an image taken in Atlanta. Describe the context or story behind this photo here.',
+            caption: 'Spencer \'Hantastic\' Lancaster (2021)',
         },
         {
             src: '/images/atlantaImage2.jpg',

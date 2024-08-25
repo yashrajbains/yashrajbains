@@ -27,7 +27,7 @@ function Stockton() {
         },
         {
             src: '/images/polaroid.png',
-            caption: 'My sister took this polaroid of me and an old lover in front of my 5th Stockton home. ' +
+            caption: 'My sister took this polaroid of me and an old friend in front of my 5th Stockton home. ' +
                 '83 Eldorado was hiiieeeeeemmm. '
         },
         // Add more images and captions as needed
