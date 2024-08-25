@@ -7,6 +7,8 @@ import PageTwo from './components/pageTwo';
 import Stockton from './components/stockton';
 import ImageView from './components/ImageView';
 import Paris from './components/paris';
+import Atlanta from './components/atlanta';
+
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
                 <Route path="/page-two" element={<PageTwo />} />
                 <Route path="/stockton-photos" element={<Stockton />} />
                 <Route path="/paris-photos" element={<Paris />} />
-                <Route path="/atlanta-photos" element={<Atlanta />} />
+                <Route path="/atlanta-photos" element={<Atlanta />} /> {/* Add this line */}
                 <Route path="/image-view" element={<ImageView />} />  {/* New route for image view */}
             </Routes>
         </Router>

@@ -70,6 +70,19 @@ function PageOne() {
                 >
                 </Marker>
 
+                {/* Place a marker on Atlanta with the custom icon */}
+                <Marker
+                    position={[33.7490, -84.3880]}  // Latitude and Longitude of Atlanta
+                    icon={atlantaIcon}
+                    eventHandlers={{
+                        click: () => {
+                            navigate('/atlanta-photos');  // Navigate to Atlanta photos page on click
+                        },
+                    }}
+                >
+                </Marker>
+
+
 
             </MapContainer>
         </div>

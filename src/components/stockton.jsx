@@ -12,7 +12,7 @@ function Stockton() {
                 'owned by the great Benjamin Reddish. Unfortunately, the shutter had a problem of getting stuck and I ' +
                 'returned the camera to Tim after a pitiful attempt to repair it. Looking back, I should have kept' +
                 ' the camera for its significance... Anyways, this picture was taken on top of the parking garage nearest ' +
-                'to the Regal movie theater in downtown Stockton. "That one garage ;)"',
+                'to the Regal movie theater in downtown Stockton. "That one garage ;)" And yes, that was my car at the time.',
         },
         {
             src: '/images/nic.jpg',
@@ -24,6 +24,11 @@ function Stockton() {
                 'are walking their bikes past us. Rubin asks to be included in the photoshoot. To his left and right ' +
                 'are other "models" in the shoot, though I was (luckily) using a lens which cropped them out of ' +
                 'the photo.'
+        },
+        {
+            src: '/images/polaroid.png',
+            caption: 'My sister took this polaroid of me and an old lover in front of my 5th Stockton home. ' +
+                '83 Eldorado was hiiieeeeeemmm. '
         },
         // Add more images and captions as needed
     ];
