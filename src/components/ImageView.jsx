@@ -10,8 +10,8 @@ function ImageView() {
     return (
         <div className="image-view">
             <BackButton />
-            <img src={src} alt="Full Size" style={{ width: '100%', height: 'auto', marginBottom: '20px' }} />
-            <p>{caption}</p>
+            <img src={src} alt="Full Size" className="full-image" />
+            <p className="caption">{caption}</p>
         </div>
     );
 }
