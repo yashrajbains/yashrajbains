@@ -8,6 +8,10 @@ import Stockton from './components/stockton';
 import ImageView from './components/ImageView';
 import Paris from './components/paris';
 import Atlanta from './components/atlanta';
+import Chicago from './components/chicago';
+import NewYork from './components/newYork';
+
+
 
 
 
@@ -23,6 +27,10 @@ function App() {
                 <Route path="/paris-photos" element={<Paris />} />
                 <Route path="/atlanta-photos" element={<Atlanta />} /> {/* Add this line */}
                 <Route path="/image-view" element={<ImageView />} />  {/* New route for image view */}
+                <Route path="/chicago-photos" element={<Chicago />} /> {/* New route for Chicago */}
+                <Route path="/new-york-photos" element={<NewYork />} />
+
+
             </Routes>
         </Router>
     );
