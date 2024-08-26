@@ -5,122 +5,118 @@ import L from 'leaflet';
 import { useNavigate } from 'react-router-dom';
 import BackButton from "./BackButton.jsx";
 
-// Custom icon using the Stockton cover image
+// Custom icons
 const stocktonIcon = new L.Icon({
-    iconUrl: '/images/stocktonCover.jpg', // Path to your image
-    iconSize: [40, 60], // Adjust size of the image
-    iconAnchor: [20, 20], // Point of the icon which will correspond to marker's location
-    popupAnchor: [0, 0], // Point from which the popup should open relative to the iconAnchor
+    iconUrl: '/images/stocktonCover.jpg',
+    iconSize: [40, 60],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, 0],
 });
 
-// Custom icon using the Paris cover image
 const parisIcon = new L.Icon({
-    iconUrl: '/images/parisCover.jpg', // Path to your image
-    iconSize: [40, 60], // Adjust size of the image
-    iconAnchor: [20, 20], // Point of the icon which will correspond to marker's location
-    popupAnchor: [0, 0], // Point from which the popup should open relative to the iconAnchor
+    iconUrl: '/images/parisCover.jpg',
+    iconSize: [40, 60],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, 0],
 });
 
 const atlantaIcon = new L.Icon({
-    iconUrl: '/images/atlantaCover.jpg', // Path to your image
+    iconUrl: '/images/atlantaCover.jpg',
     iconSize: [40, 60],
     iconAnchor: [20, 20],
     popupAnchor: [0, 0],
 });
 
 const chicagoIcon = new L.Icon({
-    iconUrl: '/images/chicagoCover.jpg', // Path to your image
-    iconSize: [40, 60], // Adjust size of the image
-    iconAnchor: [20, 20], // Point of the icon which will correspond to marker's location
-    popupAnchor: [0, 0], // Point from which the popup should open relative to the iconAnchor
-});
-
-const newYorkIcon = new L.Icon({
-    iconUrl: '/images/nycCover.jpg', // Path to your New York cover image
+    iconUrl: '/images/chicagoCover.jpg',
     iconSize: [40, 60],
     iconAnchor: [20, 20],
     popupAnchor: [0, 0],
 });
 
-
+const newYorkIcon = new L.Icon({
+    iconUrl: '/images/nycCover.jpg',
+    iconSize: [40, 60],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, 0],
+});
 
 function PageOne() {
     const navigate = useNavigate();
 
     return (
         <div className="App">
-            <BackButton/>
+            <BackButton />
             <img src="/images/YashVisualArtHeaderRed.png" alt="Yash Visual Art" style={{width: '40%', height: 'auto', marginBottom: '20px', position: 'relative', top: '-20px'}}/>
             <MapContainer
                 center={[37.9577, -121.2908]}  // Center on Stockton, California
                 zoom={5}
-                style={{height: "50vh", width: "100%"}}
+                style={{ height: "50vh", width: "100%" }}
             >
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 />
 
-                {/* Place a marker on Stockton with the custom icon */}
+                {/* Stockton Marker */}
                 <Marker
-                    position={[37.9577, -121.2908]}  // Latitude and Longitude of Stockton
+                    position={[37.9577, -121.2908]}
                     icon={stocktonIcon}
                     eventHandlers={{
-                        click: () => {
-                            navigate('/stockton-photos');  // Navigate to Stockton photos page on click
+                        click: (e) => {
+                            e.originalEvent.stopPropagation();
+                            navigate('/stockton-photos');
                         },
                     }}
-                >
-                </Marker>
+                />
 
-                {/* Place a marker on Paris with the custom icon */}
+                {/* Paris Marker */}
                 <Marker
-                    position={[48.8566, 2.3522]}  // Latitude and Longitude of Paris
+                    position={[48.8566, 2.3522]}
                     icon={parisIcon}
                     eventHandlers={{
-                        click: () => {
-                            navigate('/paris-photos');  // Navigate to Paris photos page on click
+                        click: (e) => {
+                            e.originalEvent.stopPropagation();
+                            navigate('/paris-photos');
                         },
                     }}
-                >
-                </Marker>
+                />
 
-                {/* Place a marker on Atlanta with the custom icon */}
+                {/* Atlanta Marker */}
                 <Marker
-                    position={[33.7490, -84.3880]}  // Latitude and Longitude of Atlanta
+                    position={[33.7490, -84.3880]}
                     icon={atlantaIcon}
                     eventHandlers={{
-                        click: () => {
-                            navigate('/atlanta-photos');  // Navigate to Atlanta photos page on click
+                        click: (e) => {
+                            e.originalEvent.stopPropagation();
+                            navigate('/atlanta-photos');
                         },
                     }}
-                >
-                </Marker>
+                />
 
-                {/* Place a marker on Chicago with the custom icon */}
+                {/* Chicago Marker */}
                 <Marker
-                    position={[41.8781, -87.6298]}  // Latitude and Longitude of Chicago
+                    position={[41.8781, -87.6298]}
                     icon={chicagoIcon}
                     eventHandlers={{
-                        click: () => {
-                            navigate('/chicago-photos');  // Navigate to Chicago photos page on click
+                        click: (e) => {
+                            e.originalEvent.stopPropagation();
+                            navigate('/chicago-photos');
                         },
                     }}
-                >
-                </Marker>
+                />
 
+                {/* New York Marker */}
                 <Marker
-                    position={[40.7128, -74.0060]}  // Latitude and Longitude of New York City
+                    position={[40.7128, -74.0060]}
                     icon={newYorkIcon}
                     eventHandlers={{
-                        click: () => {
-                            navigate('/new-york-photos');  // Navigate to New York photos page on click
+                        click: (e) => {
+                            e.originalEvent.stopPropagation();
+                            navigate('/new-york-photos');
                         },
                     }}
-                >
-                </Marker>
-
-
+                />
             </MapContainer>
         </div>
     );
