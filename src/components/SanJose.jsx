@@ -2,13 +2,17 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton.jsx';
 
-function Atlanta() {
+function SanJose() {
     const navigate = useNavigate();
 
     const images = [
         {
-            src: '/images/atlantaImage1.jpg',
-            caption: 'Spencer \'Hantastic\' Lancaster (2021)',
+            src: '/images/sanJoseImage1.jpg',
+            caption: 'asdf',
+        },
+        {
+            src: '/images/sanJoseImage2.jpg',
+            caption: 'asdf',
         },
         // Add more images and captions as needed
     ];
@@ -18,13 +22,13 @@ function Atlanta() {
     };
 
     return (
-        <div className="atlanta-gallery">
+        <div className="sanjose-gallery">
             <BackButton />
-            <h1>Yes I really did fly to Atlanta to witness Donda LP2...</h1>
+            <h1>San Jose</h1>
             <div className="image-grid">
                 {images.map((image, index) => (
                     <div className="image-item" key={index} onClick={() => viewImage(image)}>
-                        <img src={image.src} alt={`Atlanta Photo ${index + 1}`} />
+                        <img src={image.src} alt={`San Jose Photo ${index + 1}`} />
                     </div>
                 ))}
             </div>
@@ -32,4 +36,4 @@ function Atlanta() {
     );
 }
 
-export default Atlanta;
+export default SanJose;
