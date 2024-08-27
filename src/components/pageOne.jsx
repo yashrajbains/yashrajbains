@@ -42,6 +42,13 @@ const newYorkIcon = new L.Icon({
     popupAnchor: [0, 0],
 });
 
+const sanJoseIcon = new L.Icon({
+    iconUrl: '/images/sanJoseCover.jpg', // Path to your San Jose cover image
+    iconSize: [40, 60],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, 0],
+});
+
 
 
 function PageOne() {
@@ -115,6 +122,17 @@ function PageOne() {
                     eventHandlers={{
                         click: () => {
                             navigate('/new-york-photos');  // Navigate to New York photos page on click
+                        },
+                    }}
+                >
+                </Marker>
+
+                <Marker
+                    position={[37.3387, -121.8853]}  // Latitude and Longitude of San Jose
+                    icon={sanJoseIcon}
+                    eventHandlers={{
+                        click: () => {
+                            navigate('/SanJose');  // Navigate to San Jose photos page on click
                         },
                     }}
                 >
