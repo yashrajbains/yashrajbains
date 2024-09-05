@@ -30,7 +30,6 @@ function App() {
                 <Route path="/chicago-photos" element={<Chicago />} /> {/* New route for Chicago */}
                 <Route path="/new-york-photos" element={<NewYork />} />
                 <Route path="/SanJose" element={<SanJose />} />
-                <Route path="/mapTest" element={<MapTest />} />
 
 
             </Routes>
