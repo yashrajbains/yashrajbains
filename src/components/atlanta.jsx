@@ -20,7 +20,7 @@ function Atlanta() {
     return (
         <div className="atlanta-gallery">
             <BackButton />
-            <h1>Yes I really did fly to Atlanta to witness Donda LP2...</h1>
+            <h1>Yes I really did fly to Atlanta to see Donda LP2...</h1>
             <div className="image-grid">
                 {images.map((image, index) => (
                     <div className="image-item" key={index} onClick={() => viewImage(image)}>
