@@ -8,7 +8,7 @@ function Atlanta() {
     const images = [
         {
             src: '/images/atlantaImage1.jpg',
-            caption: 'Spencer \'Hantastic\' Lancaster (2021)',
+            caption: 'Spencer \'Handtastic\' Lancaster (2021)',
         },
         // Add more images and captions as needed
     ];

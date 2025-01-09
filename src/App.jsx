@@ -13,8 +13,6 @@ import NewYork from './components/newYork';
 import SanJose from './components/SanJose';
 
 
-
-
 function App() {
     return (
         <Router>
