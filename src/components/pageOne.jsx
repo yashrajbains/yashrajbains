@@ -42,12 +42,12 @@ const newYorkIcon = new L.Icon({
     popupAnchor: [0, 0],
 });
 
-const sanJoseIcon = new L.Icon({
-    iconUrl: '/images/sanJoseCover.jpg', // Path to your San Jose cover image
-    iconSize: [40, 60],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, 0],
-});
+// const sanJoseIcon = new L.Icon({
+//     iconUrl: '/images/sanJoseCover.jpg', // Path to your San Jose cover image
+//     iconSize: [40, 60],
+//     iconAnchor: [20, 20],
+//     popupAnchor: [0, 0],
+// });
 
 
 
@@ -67,7 +67,6 @@ function PageOne() {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 />
-
                 {/* Place a marker on Stockton with the custom icon */}
                 <Marker
                     position={[37.9577, -121.2908]}  // Latitude and Longitude of Stockton
