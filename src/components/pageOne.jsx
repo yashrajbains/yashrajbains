@@ -42,12 +42,12 @@ const newYorkIcon = new L.Icon({
     popupAnchor: [0, 0],
 });
 
-// const sanJoseIcon = new L.Icon({
-//     iconUrl: '/images/sanJoseCover.jpg', // Path to your San Jose cover image
-//     iconSize: [40, 60],
-//     iconAnchor: [20, 20],
-//     popupAnchor: [0, 0],
-// });
+const sanJoseIcon = new L.Icon({
+    iconUrl: '/images/sanJoseCover.jpg', // Path to your San Jose cover image
+    iconSize: [40, 60],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, 0],
+});
 
 
 
