@@ -12,7 +12,7 @@ function NewYork() {
         },
         {
             src: '/images/nycImage2.jpg',
-            caption: 'I\'m no better than the average NYC tourist; the subway was mesmerizing. ' +
+            caption: 'I\'m no better than the average NYC tourist; the subway was dope. ' +
                 'Love the pressure winds from the incoming trains. ',
         },
         {
@@ -22,7 +22,7 @@ function NewYork() {
         },
         {
             src: '/images/nycImage4.jpg',
-            caption: 'A dope spooky photo of St. Patrick\'s. I felt quite insensitive going inside though it ' +
+            caption: 'A dope spooky photo of St. Patrick\'s. I felt insensitive going inside though it ' +
                 'was extremely beautiful. I would die to hear those organs play',
         },
         {
@@ -46,8 +46,7 @@ function NewYork() {
     return (
         <div className="newYork-gallery">
             <BackButton />
-            <h1>My first NYC trip (2022). I hope it's not long before I live here. Just give
-            me an excuse!!!</h1>
+            <h1>First trip to NYC, December of 2022</h1>
             <div className="image-grid">
                 {images.map((image, index) => (
                     <div className="image-item" key={index} onClick={() => viewImage(image)}>
