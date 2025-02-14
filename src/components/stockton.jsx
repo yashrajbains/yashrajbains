@@ -9,11 +9,11 @@ function Stockton() {
         {
             src: '/images/impalaGarage.jpg',
             caption: 'I had just purchased my first camera from Ulmer Photo on Pacific Ave. Minolta SRT 101, ' +
-                'owned by the great Benjamin Reddish. Unfortunately, the shutter had a problem of getting stuck and I ' +
+                'previously owned by Benjamin Reddish. Unfortunately, the shutter had a problem of getting stuck and I ' +
                 'returned the camera to Tim after a pitiful attempt to repair it. Looking back, I should have kept' +
-                ' the camera for its significance... Anyways, this picture is one of the two pictures I took with that ' +
+                ' the camera... Anyways, this picture is one of the two pictures I took with that ' +
                 'camera, on top of the parking garage nearest ' +
-                'to the Regal movie theater in downtown Stockton. "That one garage ;)" And yes, that was my car at the time.',
+                'to the Regal movie theater in downtown Stockton. "That one garage" And yes, that was my car at the time.',
         },
         {
             src: '/images/nic.jpg',
