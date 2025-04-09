@@ -21,10 +21,7 @@ function Stockton() {
         },
         {
             src: '/images/rubin.jpg',
-            caption: 'While doing a photoshoot for P.M., a man and his [insert word for female sig other] ' +
-                'are walking their bikes past us. Rubin asks to be included in the photoshoot. To his left and right ' +
-                'are other "models" in the shoot, though I was (luckily) using a lens which cropped them out of ' +
-                'the photo.'
+            caption: 'Rubin (2021)'
         },
         {
             src: '/images/polaroid.png',

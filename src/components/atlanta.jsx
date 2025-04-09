@@ -10,6 +10,22 @@ function Atlanta() {
             src: '/images/atlantaImage1.jpg',
             caption: 'Spencer \'Handtastic\' Lancaster (2021)',
         },
+        {
+            src: '/images/stark.jpg',
+            caption: 'Post Covid Atlanta',
+        },
+        {
+            src: '/images/church.jpg',
+            caption: '',
+        },
+        {
+            src: '/images/church2.jpg',
+            caption: '',
+        },
+        {
+            src: '/images/---_00057.jpg',
+            caption: '',
+        },
         // Add more images and captions as needed
     ];
 

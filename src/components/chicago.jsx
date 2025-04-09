@@ -12,12 +12,11 @@ function Chicago() {
         },
         {
             src: '/images/chicagoImage2.jpg', // Replace with actual image path
-            caption: 'An image from our hotel room. I remember being very disappointed at my ' +
-                'photographic abilities when looking at the pictures from this trip. ',
+            caption: '',
         },
         {
             src: '/images/chicagoImage3.jpg', // Replace with actual image path
-            caption: 'Trump tower. Chicago is so beautiful. Would love to live there...',
+            caption: 'Trump tower. Chicago is so beautiful, was only there for 12 hours. Need to make it back.',
         },
         // Add more images as needed
     ];
