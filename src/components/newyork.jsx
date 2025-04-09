@@ -8,12 +8,11 @@ function NewYork() {
     const images = [
         {
             src: '/images/nycImage1.jpg',
-            caption: 'Maybe get the tourist ass photos out of the way first.',
+            caption: '',
         },
         {
             src: '/images/nycImage2.jpg',
-            caption: 'I\'m no better than the average NYC tourist; the subway was dope. ' +
-                'Love the pressure winds from the incoming trains. ',
+            caption: 'Love the pressure winds from the incoming trains. ',
         },
         {
             src: '/images/nycImage3.jpg',
@@ -22,13 +21,11 @@ function NewYork() {
         },
         {
             src: '/images/nycImage4.jpg',
-            caption: 'A dope spooky photo of St. Patrick\'s. I felt insensitive going inside though it ' +
-                'was extremely beautiful. I would die to hear those organs play',
+            caption: 'I would die to hear these organs play',
         },
         {
             src: '/images/nycImage5.jpg',
-            caption: 'My friend Dan visited around a year later and took a similar picture on this same exact street. ' +
-                'Great minds do think alike.',
+            caption: '',
         },
         {
             src: '/images/nycImage6.jpg',

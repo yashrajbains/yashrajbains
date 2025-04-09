@@ -8,8 +8,31 @@ function Paris() {
     const images = [
         {
             src: '/images/eiffelTower.jpg',
-            caption: "Uhhh yea... Unfortunately I did take a picture of the Eiffel Tower. But as " +
-                "always, I'm always...",
+            caption: "Uhhh yea...",
+        },
+        {
+            src: '/images/__8_00065.jpg',
+            caption: "",
+        },
+        {
+            src: '/images/_15_00119.jpg',
+            caption: "",
+        },
+        {
+            src: '/images/_16_00016.jpg',
+            caption: "",
+        },
+        {
+            src: '/images/_18_00122.jpg',
+            caption: "",
+        },
+        {
+            src: '/images/_21_00021.jpg',
+            caption: "",
+        },
+        {
+            src: '/images/_23_00080.jpg',
+            caption: "",
         },
         // Add more images and captions as needed
     ];
@@ -21,7 +44,7 @@ function Paris() {
     return (
         <div className="paris-gallery">
             <BackButton />
-            <h1>Spring 2022: A (relatively) spontaneous trip to Paris with my friend...</h1>
+            <h1>Paris 2022</h1>
             <div className="image-grid">
                 {images.map((image, index) => (
                     <div className="image-item" key={index} onClick={() => viewImage(image)}>

@@ -7,12 +7,24 @@ function SanJose() {
 
     const images = [
         {
-            src: '/images/sanJoseImage1.jpg',
-            caption: 'asdf',
+            src: '/images/cdm1.jpg',
+            caption: 'Cinco de Mayo 2022 (1)',
         },
         {
-            src: '/images/sanJoseImage2.jpg',
-            caption: 'asdf',
+            src: '/images/cdm2.jpg',
+            caption: 'Cinco de Mayo 2022 (2)',
+        },
+        {
+            src: '/images/goodkarma.jpg',
+            caption: 'Good Karma, my favorite place in SJ.',
+        },
+        {
+            src: '/images/oneofMe.jpg',
+            caption: 'One of me.',
+        },
+        {
+            src: '/images/tomfr.jpg',
+            caption: 'Thomas Tichy (2025)'
         },
         // Add more images and captions as needed
     ];

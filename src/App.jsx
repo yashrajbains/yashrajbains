@@ -11,6 +11,9 @@ import Atlanta from './components/atlanta';
 import Chicago from './components/chicago';
 import NewYork from './components/newYork';
 import SanJose from './components/SanJose';
+import MexicoCity from './components/mexicoCity';
+import Hawaii from './components/hawaii'
+
 
 
 function App() {
@@ -28,6 +31,10 @@ function App() {
                 <Route path="/chicago-photos" element={<Chicago />} /> {/* New route for Chicago */}
                 <Route path="/new-york-photos" element={<NewYork />} />
                 <Route path="/SanJose" element={<SanJose />} />
+                <Route path="/mexicoCity" element={<MexicoCity />} />
+                <Route path="/hawaii" element={<Hawaii />} />
+
+
 
 
             </Routes>
