@@ -34,7 +34,7 @@ function Atlanta() {
     };
 
     return (
-        <div className="atlanta-gallery">
+        <div className="atlanta-gallery gallery-page">
             <BackButton />
             <h1>Atlanta 2021</h1>
             <div className="image-grid">

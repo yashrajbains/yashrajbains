@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton.jsx';
+import '../homePage.css'
 
 function SanJose() {
     const navigate = useNavigate();
@@ -34,7 +35,7 @@ function SanJose() {
     };
 
     return (
-        <div className="sanjose-gallery">
+        <div className="sanjose-gallery gallery-page">
             <BackButton />
             <h1>San Jose</h1>
             <div className="image-grid">

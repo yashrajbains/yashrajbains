@@ -26,7 +26,7 @@ function Chicago() {
     };
 
     return (
-        <div className="chicago-gallery">
+        <div className="chicago-gallery gallery-page">
             <BackButton />
             <h1>On the way back from Toronto, I strongly encouraged my Mom and I to make a
             |very important| stop in Chicago...</h1>

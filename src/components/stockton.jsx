@@ -23,11 +23,11 @@ function Stockton() {
             src: '/images/rubin.jpg',
             caption: 'Rubin (2021)'
         },
-        {
-            src: '/images/polaroid.png',
-            caption: 'My sister took this polaroid of me and an old friend in front of my 5th Stockton home. ' +
-                '83 Eldorado was hiiieeeeeemmm. '
-        },
+        // {
+        //     src: '/images/polaroid.png',
+        //     caption: 'My sister took this polaroid of me and an old friend in front of my 5th Stockton home. ' +
+        //         '83 Eldorado was hiiieeeeeemmm. '
+        // },
         // Add more images and captions as needed
     ];
 
@@ -36,7 +36,7 @@ function Stockton() {
     };
 
     return (
-        <div className="stockton-gallery">
+        <div className="stockton-gallery gallery-page">
             <BackButton />
             <h1>Some pictures from where I grew up. The best of which are Missing.</h1>
             <div className="image-grid">
