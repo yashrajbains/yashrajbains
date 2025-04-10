@@ -6,24 +6,139 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: black;
 }
 
 .App h1 {
-    font-size: 2.5rem !important; /* Adjust font size */
-    margin-top: 20px !important; /* Adjust title location */
-    margin-bottom: 40px !important; /* Adjust spacing between title and buttons */
+    font-size: 2.5rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+    color: white;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
-    width: 60%; /* Adjust width to control spacing between gifs */
-    margin-top: 20px; /* Adjust spacing above the gifs */
+    width: 60%;
+    margin-top: 20px;
 }
 
 .animated-button {
-    width: 150px; /* Adjust width of gifs */
-    height: 150px; /* Adjust height of gifs */
+    width: 150px;
+    height: 150px;
     cursor: pointer;
-    margin: 0 20px; /* Adjust spacing between gifs */
+    margin: 0 20px;
+}
+
+/* Desktop styles for sanjose gallery */
+.sanjose-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.sanjose-gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .gallery-page {
+        margin: 0;
+        padding: 720px 16px 40px 16px;
+        background-color: black;
+        box-sizing: border-box;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .gallery-page h1 {
+        font-size: 28px;
+        margin: 0 0 20px 0;
+        padding-top: 8px;
+        color: white;
+        text-align: center;
+    }
+
+    .gallery-page .image-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .gallery-page .image-item {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .gallery-page .image-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .buttons {
+        flex-direction: row;            /* keep them side by side */
+        justify-content: center;        /* center the whole row */
+        align-items: center;            /* vertically center (optional) */
+        gap: 20px;                      /* space between the two gifs */
+        width: 100%;
+        flex-wrap: wrap;                /* just in case they need to wrap */
+    }
+
+    .animated-button {
+        width: 150px;                   /* scale down on mobile */
+        height: 150px;
+        margin: 0;
+    }
+
+    .App h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Custom top padding overrides */
+    .hawaii-gallery { padding-top: 1250px; }
+    .chicago-gallery { padding-top: 1300px; }
+    .atlanta-gallery { padding-top: 2300px; }
+    .mexico-gallery { padding-top: 800px; }
+    .newYork-gallery { padding-top: 2850px; }
+    .paris-gallery { padding-top: 3100px; }
+    .stockton-gallery { padding-top: 920px; }
 }

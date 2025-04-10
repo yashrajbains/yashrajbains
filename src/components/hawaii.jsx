@@ -42,7 +42,7 @@ function Hawaii() {
     };
 
     return (
-        <div className="hawaii-gallery">
+        <div className="hawaii-gallery gallery-page">
             <BackButton />
             <h1>Hawai‘i</h1>
             <div className="image-grid">

@@ -41,7 +41,7 @@ function NewYork() {
     };
 
     return (
-        <div className="newYork-gallery">
+        <div className="newYork-gallery gallery-page">
             <BackButton />
             <h1>First trip to NYC, December of 2022</h1>
             <div className="image-grid">

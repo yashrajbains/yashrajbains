@@ -42,7 +42,7 @@ function Paris() {
     };
 
     return (
-        <div className="paris-gallery">
+        <div className="paris-gallery gallery-page">
             <BackButton />
             <h1>Paris 2022</h1>
             <div className="image-grid">

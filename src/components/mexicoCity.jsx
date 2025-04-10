@@ -30,7 +30,7 @@ function MexicoCity() {
     };
 
     return (
-        <div className="mexico-gallery">
+        <div className="mexico-gallery gallery-page">
             <BackButton />
             <h1>Mexico City 2025</h1>
             <div className="image-grid">
