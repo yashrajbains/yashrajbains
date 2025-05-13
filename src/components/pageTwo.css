@@ -72,3 +72,27 @@
     height: 100%;
     border: none;
 }
+
+/* Mobile styles for poster modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        height: auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .pdf-viewer {
+        width: 100%;
+        height: auto;
+        max-height: 85vh;
+    }
+
+    .close-button {
+        top: 8px;
+        right: 12px;
+        font-size: 1.8rem;
+    }
+}
+
+
