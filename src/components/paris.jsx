@@ -11,7 +11,7 @@ function Paris() {
             caption: "Uhhh yea...",
         },
         {
-            src: '/images/paris1.jpg',
+            src: '/images/eiffelTower.jpg',
             caption: ".",
         },
         {
