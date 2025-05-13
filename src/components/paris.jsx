@@ -11,27 +11,27 @@ function Paris() {
             caption: "Uhhh yea...",
         },
         {
-            src: '/images/__8_00065.jpg',
+            src: '/images/paris1.jpg',
             caption: "",
         },
         {
-            src: '/images/_15_00119.jpg',
+            src: '/images/paris2.jpg',
             caption: "",
         },
         {
-            src: '/images/_16_00016.jpg',
+            src: '/images/paris3.jpg',
             caption: "",
         },
         {
-            src: '/images/_18_00122.jpg',
+            src: '/images/paris4.jpg',
             caption: "",
         },
         {
-            src: '/images/_21_00021.jpg',
+            src: '/images/paris5.jpg',
             caption: "",
         },
         {
-            src: '/images/_23_00080.jpg',
+            src: '/images/paris6.jpg',
             caption: "",
         },
         // Add more images and captions as needed
