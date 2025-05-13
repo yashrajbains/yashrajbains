@@ -12,7 +12,7 @@ function Paris() {
         },
         {
             src: '/images/paris1.jpg',
-            caption: "",
+            caption: ".",
         },
         {
             src: '/images/paris2.jpg',
