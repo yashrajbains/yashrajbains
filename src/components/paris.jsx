@@ -11,8 +11,8 @@ function Paris() {
             caption: "Uhhh yea...",
         },
         {
-            src: '/images/eiffelTower.jpg',
-            caption: ".",
+            src: '/images/paris1.jpg',
+            caption: "",
         },
         {
             src: '/images/paris2.jpg',
@@ -42,7 +42,7 @@ function Paris() {
     };
 
     return (
-        <div className="paris-gallery gallery-page">
+        <div className="paris-gallery gallery-page" style={{ paddingTop: '800px' }}>
             <BackButton />
             <h1>Paris 2022</h1>
             <div className="image-grid">
