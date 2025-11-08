@@ -1,98 +1,76 @@
+/* Page container (keep what you had for background/padding) */
 .App {
-    text-align: center;
-    background-color: black;
-    min-height: 100vh;
-    padding-top: 3rem;
+  text-align: center;
+  background-color: #000;
+  min-height: 100vh;
+  padding-top: 3rem;
 }
 
+/* ✅ Responsive, centered grid */
 .button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));  /* desktop: 3 columns */
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  width: min(900px, 92vw);  /* keeps grid tight and centered */
+  margin: 0 auto;
 }
 
-.pdf-button {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+/* ✅ Uniform tile with fixed aspect ratio */
+.pdf-card {
+  aspect-ratio: 16 / 9;          /* pick 1/1, 4/3, or 16/9 */
+  background: #0e0e0e;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.45);
+  display: grid;
+  place-items: center;           /* centers the image */
+  padding: 10px;                 /* breathing room around logos/banners */
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+}
+.pdf-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.55);
 }
 
-.pdf-button:hover {
-    transform: scale(1.05);
+/* The image scales to fit without distortion */
+.pdf-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;           /* no cropping; contained nicely */
 }
 
-.bottom {
-    grid-column: span 2;
-    justify-self: center;
+/* Optional: allow some items to span two columns on wide screens */
+.span-2 { grid-column: span 2; }
+
+/* Tablet */
+@media (max-width: 900px) {
+  .button-grid { grid-template-columns: repeat(2, minmax(200px, 1fr)); width: min(700px, 94vw); }
 }
 
+/* Phone */
+@media (max-width: 560px) {
+  .button-grid { grid-template-columns: 1fr; width: min(480px, 94vw); }
+  .span-2 { grid-column: auto; }     /* remove spanning on narrow screens */
+}
+
+/* ===== Modal (unchanged from my last message, keep your working version) ===== */
 .pdf-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed; inset: 0; background: rgba(0,0,0,.88);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000; padding: 20px;
 }
-
 .modal-content {
-    position: relative;
-    width: 90%;
-    max-width: 800px;
-    height: 90%;
-    background: black;
-    border-radius: 8px;
-    overflow: hidden;
+  position: relative; width: min(1100px, 96vw); height: min(96vh, 1200px);
+  background: #000; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0,0,0,.55);
 }
-
 .close-button {
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute; top: 10px; right: 14px; background: transparent; border: 0;
+  font-size: 2rem; color: #fff; cursor: pointer; z-index: 2;
 }
-
-.pdf-viewer {
-    width: 100%;
-    height: 100%;
-    border: none;
+.pdf-viewer { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000; }
+@media (max-width: 768px) { /* on phones we open new tab anyway */
+  .modal-content { -webkit-overflow-scrolling: touch; }
 }
-
-/* Mobile styles for poster modal */
-@media (max-width: 768px) {
-    .modal-content {
-        width: 95%;
-        height: auto;
-        max-height: 90vh;
-        overflow-y: auto;
-    }
-
-    .pdf-viewer {
-        width: 100%;
-        height: auto;
-        max-height: 85vh;
-    }
-
-    .close-button {
-        top: 8px;
-        right: 12px;
-        font-size: 1.8rem;
-    }
-}
-
-

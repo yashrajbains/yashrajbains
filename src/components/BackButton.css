@@ -1,12 +1,18 @@
 .back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 1000; /* Ensure it stays on top of other elements */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1500;
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity .25s ease, transform .25s ease;
 }
-
+.back-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
 .back-button img {
-    width: 110px; /* Adjust the size of the back button */
-    height: auto;
+  width: 110px;
+  height: auto;
+  display: block;
 }

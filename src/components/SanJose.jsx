@@ -16,8 +16,8 @@ function SanJose() {
             caption: 'Cinco de Mayo 2022 (2)',
         },
         {
-            src: '/images/goodkarma.jpg',
-            caption: 'Good Karma, my favorite place in SJ.',
+            src: '/images/goodKarma2.jpg',
+            caption: 'Good Karma',
         },
         {
             src: '/images/oneofMe.jpg',
@@ -26,6 +26,18 @@ function SanJose() {
         {
             src: '/images/tomfr.jpg',
             caption: 'Thomas Tichy (2025)'
+        },
+        {
+            src: '/images/sanJoseZ.jpg',
+            caption: ''
+        },
+        {
+            src: '/images/sanJoseZ2.jpg',
+            caption: 'Thomas Tichy (2025)'
+        },
+        {
+            src: '/images/AndrewYbarra.jpg',
+            caption: 'Andrew Ybarra (2025)'
         },
         // Add more images and captions as needed
     ];

@@ -10,7 +10,7 @@ function HomePage() {
     return (
         <div className="App">
             <h1 style={{ fontSize: '2.5rem', marginTop: '20px', marginBottom: '40px' }}>
-                Pick /// One /// Pick /// One
+                
             </h1>
             <div className="buttons">
                 <img
