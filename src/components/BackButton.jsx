@@ -10,15 +10,3 @@ export default function BackButton() {
     </div>
   );
 }
-
-function BackButton() {
-    const navigate = useNavigate();
-
-    return (
-        <div className="back-button" onClick={() => navigate(-1)}>
-            <img src="/images/backRed.png" alt="Back" />
-        </div>
-    );
-}
-
-export default BackButton;
