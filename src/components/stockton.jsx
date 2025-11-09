@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-// src/components/stockton.jsx
 import React, { useState } from 'react';
 import BackButton from './BackButton';
 import Lightbox from './Lightbox';
