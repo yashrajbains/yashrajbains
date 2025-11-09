@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/components/sanJose.jsx
 import React, { useState } from 'react';
 import BackButton from './BackButton';
@@ -54,3 +55,57 @@ export default function SanJose() {
     </div>
   );
 }
+=======
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import BackButton from './BackButton.jsx';
+import '../homePage.css'
+
+function SanJose() {
+    const navigate = useNavigate();
+
+    const images = [
+        {
+            src: '/images/cdm1.jpg',
+            caption: 'Cinco de Mayo 2022 (1)',
+        },
+        {
+            src: '/images/cdm2.jpg',
+            caption: 'Cinco de Mayo 2022 (2)',
+        },
+        {
+            src: '/images/goodkarma.jpg',
+            caption: 'Good Karma, my favorite place in SJ.',
+        },
+        {
+            src: '/images/oneofMe.jpg',
+            caption: 'One of me.',
+        },
+        {
+            src: '/images/tomfr.jpg',
+            caption: 'Thomas Tichy (2025)'
+        },
+        // Add more images and captions as needed
+    ];
+
+    const viewImage = (image) => {
+        navigate('/image-view', { state: image });
+    };
+
+    return (
+        <div className="sanjose-gallery gallery-page">
+            <BackButton />
+            <h1>San Jose</h1>
+            <div className="image-grid">
+                {images.map((image, index) => (
+                    <div className="image-item" key={index} onClick={() => viewImage(image)}>
+                        <img src={image.src} alt={`San Jose Photo ${index + 1}`} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default SanJose;
+>>>>>>> b3f0d64985ac9757ec8c2c339d41d72178af4ea6

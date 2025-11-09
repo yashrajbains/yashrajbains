@@ -1,4 +1,5 @@
 .back-button {
+<<<<<<< HEAD
   position: fixed;
   top: 20px;
   left: 20px;
@@ -15,4 +16,16 @@
   width: 110px;
   height: auto;
   display: block;
+=======
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.back-button img {
+    width: 110px; /* Adjust the size of the back button */
+    height: auto;
+>>>>>>> b3f0d64985ac9757ec8c2c339d41d72178af4ea6
 }
