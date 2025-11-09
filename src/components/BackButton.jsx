@@ -10,7 +10,6 @@ export default function BackButton() {
     </div>
   );
 }
-import './BackButton.css'; // We'll create this CSS file next
 
 function BackButton() {
     const navigate = useNavigate();
