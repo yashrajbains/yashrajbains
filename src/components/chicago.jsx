@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import BackButton from './BackButton';
 import Lightbox from './Lightbox';
@@ -53,7 +52,6 @@ export default function Chicago() {
     </div>
   );
 }
-=======
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton.jsx';
@@ -98,4 +96,3 @@ function Chicago() {
 }
 
 export default Chicago;
->>>>>>> b3f0d64985ac9757ec8c2c339d41d72178af4ea6

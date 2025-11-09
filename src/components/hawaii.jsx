@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // src/components/hawaii.jsx
 import React, { useState } from 'react';
 import BackButton from './BackButton';
@@ -54,7 +53,6 @@ export default function Hawaii() {
     </div>
   );
 }
-=======
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton.jsx';
@@ -114,4 +112,3 @@ function Hawaii() {
 }
 
 export default Hawaii;
->>>>>>> b3f0d64985ac9757ec8c2c339d41d72178af4ea6

@@ -37,7 +37,6 @@ export default function Stockton() {
           </div>
         ))}
       </div>
-=======
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackButton from './BackButton.jsx';
@@ -89,7 +88,6 @@ function Stockton() {
         </div>
     );
 }
->>>>>>> b3f0d64985ac9757ec8c2c339d41d72178af4ea6
 
       {open && active && (
         <Lightbox
