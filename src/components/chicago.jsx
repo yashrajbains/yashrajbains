@@ -52,4 +52,3 @@ export default function Chicago() {
     </div>
   );
 }
-import React from 'react';

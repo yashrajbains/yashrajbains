@@ -53,4 +53,3 @@ export default function Hawaii() {
     </div>
   );
 }
-import React from 'react';

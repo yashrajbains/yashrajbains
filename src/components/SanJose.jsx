@@ -1,3 +1,4 @@
+
 // src/components/sanJose.jsx
 import React, { useState } from 'react';
 import BackButton from './BackButton';
@@ -54,4 +55,3 @@ export default function SanJose() {
     </div>
   );
 }
-import React from 'react';
