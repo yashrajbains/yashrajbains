@@ -1,28 +1,37 @@
-.back-button {
+.back-btn {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1500;
+  top: calc(env(safe-area-inset-top, 0px) + 16px);
+  left: 16px;
+  z-index: 10000;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  opacity: 0.95;
-  transition: opacity .25s ease, transform .25s ease;
-}
-.back-button:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-.back-button img {
-  width: 110px;
-  height: auto;
-  display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 1000; /* Ensure it stays on top of other elements */
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-.back-button img {
-    width: 110px; /* Adjust the size of the back button */
-    height: auto;
+/* Make the icon slightly larger and crisp */
+.back-icon {
+  width: 55px;
+  height: 55px;
+  display: block;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.15));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+/* Hover animation: smooth grow */
+.back-btn:hover .back-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.3));
+}
+
+/* Optional touch tweak: larger tap area for iPhone */
+@media (hover: none) {
+  .back-btn {
+    padding: 10px;
+  }
 }
