@@ -16,7 +16,7 @@ export default function SanJose() {
     { src: '/images/oneofMe.jpg', caption: 'One of me.' },
     { src: '/images/tomfr.jpg', caption: 'Thomas Tichy (2025)' },
     { src: '/images/sanJoseZ.jpg', caption: '' },
-    { src: '/images/sanJoseZ2.jpg', caption: 'Thomas Tichy (2025)' },
+    { src: '/images/sanJoseZ2.jpg', caption: '' },
     { src: '/images/AndrewYbarra.jpg', caption: 'Andrew Ybarra (2025)' },
     // add more as needed
   ];

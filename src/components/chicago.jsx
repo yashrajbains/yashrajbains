@@ -8,14 +8,14 @@ export default function Chicago() {
   const [active, setActive] = useState(null);
 
   const images = [
-    { src: '/images/chicagoImage1.jpg', caption: 'My Mom and I pose for an image at the Cloud Gate' },
+    { src: '/images/chicagoImage1.jpg', caption: 'My Mom and I' },
     { src: '/images/chicagoImage3.jpg', caption: '' },
-    { src: '/images/cloudGate2025.jpg', caption: '' },
-    { src: '/images/noKings.jpg', caption: '' },
+    { src: '/images/cloudGate2025.jpg', caption: 'APS 2025' },
+    { src: '/images/noKings.jpg', caption: '2025' },
     { src: '/images/noKings2.jpg', caption: '' },
     { src: '/images/noKings3.jpg', caption: '' },
     { src: '/images/noKings4.jpg', caption: '' },
-    { src: '/images/greenMile2.jpg', caption: '' },
+    { src: '/images/greenMile2.jpg', caption: 'Green Mile' },
   ];
 
   const openLightbox  = (img) => { setActive(img); setOpen(true); };

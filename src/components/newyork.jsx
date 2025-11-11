@@ -32,7 +32,7 @@ export default function NewYork() {
       {/* Hide back button while viewing lightbox */}
       {!open && <BackButton />}
 
-      <h1>First trip to NYC, December of 2022</h1>
+      <h1>NYC, December of 2022</h1>
 
       <div className="image-grid">
         {images.map((img, i) => (
