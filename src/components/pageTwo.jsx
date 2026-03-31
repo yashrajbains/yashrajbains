@@ -5,11 +5,12 @@ import './PageTwo.css';
 import raregemsImg from '../assets/raregems.png';
 import rubinImg from '../assets/rubin.png';
 import rweekImg from '../assets/rweek.png';
+import dnpImg from '../assets/dnpimg.png';
 
 import raregemsPDF from '../assets/Rare Gems Poster FINAL.pdf';
 import rubinPDF from '../assets/RSCA 2025 - Yashraj Bains.pdf';
 import rcwPDF from '../assets/RCW_final.pdf';
-import DNP from '../assets/DNP_LLNL_Yash_FINAL.pdf'
+import DNP from '../assets/DNP_LLNL_Yash_FINAL.pdf';
 
 function PageTwo() {
   const [selectedPdf, setSelectedPdf] = useState(null);
