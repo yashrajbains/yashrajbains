@@ -5,7 +5,6 @@ import './PageTwo.css';
 import raregemsImg from '../assets/raregems.png';
 import rubinImg from '../assets/rubin.png';
 import rweekImg from '../assets/rweek.png';
-import dnpImg from '../assets/dnpimg.png'
 
 import raregemsPDF from '../assets/Rare Gems Poster FINAL.pdf';
 import rubinPDF from '../assets/RSCA 2025 - Yashraj Bains.pdf';

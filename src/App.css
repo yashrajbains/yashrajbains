@@ -280,4 +280,10 @@ button {
 .newYork-gallery > *:first-child,
 .hawaii-gallery > *:first-child {
   margin-top: 0 !important;
+
+.map-wrapper {
+  height: 1vh;
+}
+
+
 }

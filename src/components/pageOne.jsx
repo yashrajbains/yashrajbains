@@ -73,17 +73,7 @@ function PageOne() {
     return (
         <div className="App">
             <BackButton />
-            <img
-                src="/images/YashVisualArtHeaderRed.png"
-                alt="Yash Visual Art"
-                style={{
-                    width: '40%',
-                    height: 'auto',
-                    marginBottom: '20px',
-                    position: 'relative',
-                    top: '-20px',
-                }}
-            />
+            
             <MapContainer
                 center={[37.9577, -121.2908]}
                 zoom={5}
