@@ -14,6 +14,9 @@ import NewYork from './components/newyork';
 import SanJose from './components/SanJose';
 import MexicoCity from './components/mexicoCity';
 import Hawaii from './components/hawaii';
+import Bangkok from './components/bangkok';
+import ChiangMai from './components/chiangMai';
+import HongKong from './components/hongKong';
 
 export default function App() {
   return (
@@ -31,6 +34,9 @@ export default function App() {
       <Route path="/SanJose" element={<SanJose />} />
       <Route path="/mexicoCity" element={<MexicoCity />} />
       <Route path="/hawaii" element={<Hawaii />} />
+      <Route path="/bangkok" element={<Bangkok />} />
+      <Route path="/chiangMai" element={<ChiangMai />} />
+      <Route path="/hongKong" element={<HongKong />} />
     </Routes>
   );
 }

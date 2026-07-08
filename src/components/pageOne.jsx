@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useNavigate } from 'react-router-dom';
@@ -22,9 +22,43 @@ const newYorkIcon = markerIcon('/images/nycCover.jpg');
 const sanJoseIcon = markerIcon('/images/sanJoseCover.jpg');
 const mexicoIcon = markerIcon('/images/mexicoCover.jpg');
 const hawaiiIcon = markerIcon('/images/hawaiiCover.jpg');
+const bangkokIcon = markerIcon('/images/bangkokCover.jpg');
+const chiangIcon = markerIcon('/images/chiangCover.jpg');
+const hkIcon = markerIcon('/images/hkCover.jpg');
+
+// 💾 Saves map position whenever user moves/zooms the map
+function SaveMapPosition() {
+    const map = useMapEvents({
+        moveend: () => {
+            const center = map.getCenter();
+            const zoom = map.getZoom();
+
+            sessionStorage.setItem(
+                'mapPosition',
+                JSON.stringify({
+                    lat: center.lat,
+                    lng: center.lng,
+                    zoom: zoom,
+                })
+            );
+        },
+    });
+
+    return null;
+}
 
 function PageOne() {
     const navigate = useNavigate();
+
+    const savedPosition = JSON.parse(sessionStorage.getItem('mapPosition'));
+
+    const mapCenter = savedPosition
+        ? [savedPosition.lat, savedPosition.lng]
+        : [37.9577, -121.2908];
+
+    const mapZoom = savedPosition
+        ? savedPosition.zoom
+        : 5;
 
     // 📍 All marker data
     const locations = [
@@ -68,6 +102,21 @@ function PageOne() {
             icon: hawaiiIcon,
             path: '/hawaii',
         },
+        {
+            coords: [13.7563, 100.5018],
+            icon: bangkokIcon,
+            path: '/bangkok',
+        },
+        {
+            coords: [18.7953, 98.9986],
+            icon: chiangIcon,
+            path: '/chiangMai',
+        },
+        {
+            coords: [22.3193, 114.1694],
+            icon: hkIcon,
+            path: '/hongKong',
+        },
     ];
 
     return (
@@ -75,10 +124,12 @@ function PageOne() {
             <BackButton />
             
             <MapContainer
-                center={[37.9577, -121.2908]}
-                zoom={5}
+                center={mapCenter}
+                zoom={mapZoom}
                 style={{ height: '50vh', width: '100%' }}
             >
+                <SaveMapPosition />
+
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
