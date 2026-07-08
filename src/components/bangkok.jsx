@@ -33,7 +33,7 @@ export default function Bangkok() {
     { src: '/images/bangkok21.jpg', caption: '' },
     { src: '/images/bangkok3.jpg', caption: '' },
     { src: '/images/bangkok24.jpg', caption: '' },
-    { src: '/images/bangkok25.jpg', caption: 'So we sat down at some Michelin starred restaurant and quickly determined it would not satisfy our newly awaked desire for spice, sour, bitter, savory, and all of the above. Before the waitress returned to our table we quickly left and decided to take our business to: Alley Man.' },
+    { src: '/images/bangkok25.jpg', caption: 'So we sat down at some Michelin starred restaurant and quickly determined it would not satisfy our newly awakened desire for spice, sour, bitter, savory, and all of the above. Before the waitress returned to our table we quickly left and decided to take our business to: Alley Man.' },
 ];
 
   const openLightbox = (img) => {
