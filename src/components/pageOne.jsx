@@ -124,34 +124,42 @@ function PageOne() {
             <BackButton />
             
             <MapContainer
-                center={mapCenter}
-                zoom={mapZoom}
-                style={{ height: '50vh', width: '100%' }}
-            >
-                <SaveMapPosition />
+    center={mapCenter}
+    zoom={mapZoom}
+    minZoom={2}
+    maxBounds={[
+        [-85, -180],
+        [85, 180],
+    ]}
+    maxBoundsViscosity={1.0}
+    worldCopyJump={false}
+    style={{ height: '50vh', width: '100%' }}
+>
+    <SaveMapPosition />
 
-                <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                />
+    <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        noWrap={true}
+    />
 
-                {/* 🗺️ Render all markers */}
-                {locations.map((location, index) => (
-                    <Marker
-                        key={index}
-                        position={location.coords}
-                        icon={location.icon}
-                        interactive={true}
-                        keyboard={false}
-                        eventHandlers={{
-                            click: (e) => {
-                                e.originalEvent.preventDefault();
-                                navigate(location.path);
-                            },
-                        }}
-                    />
-                ))}
-            </MapContainer>
+    {/* 🗺️ Render all markers */}
+    {locations.map((location, index) => (
+        <Marker
+            key={index}
+            position={location.coords}
+            icon={location.icon}
+            interactive={true}
+            keyboard={false}
+            eventHandlers={{
+                click: (e) => {
+                    e.originalEvent.preventDefault();
+                    navigate(location.path);
+                },
+            }}
+        />
+    ))}
+</MapContainer>
         </div>
     );
 }
