@@ -25,12 +25,12 @@ export default function App() {
       <Route path="/home" element={<HomePage />} />
       <Route path="/page-one" element={<PageOne />} />
       <Route path="/page-two" element={<PageTwo />} />
-      <Route path="/stockton-photos" element={<Stockton />} />
-      <Route path="/paris-photos" element={<Paris />} />
-      <Route path="/atlanta-photos" element={<Atlanta />} />
+      <Route path="/stockton" element={<Stockton />} />
+      <Route path="/paris" element={<Paris />} />
+      <Route path="/atlanta" element={<Atlanta />} />
       <Route path="/image-view" element={<ImageView />} />
-      <Route path="/chicago-photos" element={<Chicago />} />
-      <Route path="/new-york-photos" element={<NewYork />} />
+      <Route path="/chicago" element={<Chicago />} />
+      <Route path="/newyork" element={<NewYork />} />
       <Route path="/SanJose" element={<SanJose />} />
       <Route path="/mexicoCity" element={<MexicoCity />} />
       <Route path="/hawaii" element={<Hawaii />} />

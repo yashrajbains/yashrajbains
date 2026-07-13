@@ -65,27 +65,27 @@ function PageOne() {
         {
             coords: [37.9577, -121.2908],
             icon: stocktonIcon,
-            path: '/stockton-photos',
+            path: '/stockton',
         },
         {
             coords: [48.8566, 2.3522],
             icon: parisIcon,
-            path: '/paris-photos',
+            path: '/paris',
         },
         {
             coords: [33.7490, -84.3880],
             icon: atlantaIcon,
-            path: '/atlanta-photos',
+            path: '/atlanta',
         },
         {
             coords: [41.8781, -87.6298],
             icon: chicagoIcon,
-            path: '/chicago-photos',
+            path: '/chicago',
         },
         {
             coords: [40.7128, -74.0060],
             icon: newYorkIcon,
-            path: '/new-york-photos',
+            path: '/newyork',
         },
         {
             coords: [37.3387, -121.8853],
